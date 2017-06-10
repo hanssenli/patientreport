@@ -4,21 +4,26 @@
 <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Report - Advanced Reports</title>
-    <link href="/Content/bootstrap.css" rel="stylesheet"/>
-	<link href="/Content/site.css" rel="stylesheet"/>
+    <link href="./Content/bootstrap.css" rel="stylesheet"/>
+	<link href="./Content/site.css" rel="stylesheet"/>
  
-    <script src="/Scripts/modernizr-2.6.2.js"></script>
-	<script src="/Scripts/modernizr-2.8.3.js"></script>
+    <script src="./Scripts/modernizr-2.6.2.js"></script>
+	<script src="./Scripts/modernizr-2.8.3.js"></script>
 	<style>
-    	.staticDescrip	{color:#A6B4C3; font-size:14px}
-        #divheader {color:#ffffff; background-color: #52667C; padding:20px}
-        #divfooter {background-color: #d1d9e1; padding:20px; color:#ffffff}
+		label	{font-weight: normal;}
+	
+    	.staticDescrip	{color:#A6B4C3; font-size:14px;}
+        #divheader {color:#ffffff; background-color: #52667C; padding-top:20px; font-family: Arial; position:absolute; width:100%;}
+		#hLeft	{float:left}
 		#hPatientSection {position:relative; left:30%;}
 		#hMRNSection {position:relative; left:30%;}
-        #hTitle    {position:relative; left:10%;}
-        #hDate     {position:absolute; right:10%;}
-        #hDay  	   {position:relative; left:10%;}
-        #hDescrip  {position:relative; left:10%;}
+		#hDaySection {position:relative; left:15%; font-family:Georgia;}
+		#hRecoverySection {}
+        #hTitle    {position:relative; left:15%;}
+        #hProgressBar	{display:inline}
+		#hDate     {position:absolute; right:15%; font-size:16px;}
+        #hDay  	   {font-size:36px}
+        #hDescrip  {font-size:20px}
 		#hPatient  {color:#ffffff;}
         #hProgBar  {position:relative; left:70%;}
         #hMRN	   {color:#ffffff;}
@@ -31,29 +36,48 @@
 <div>
   <div>
     
-     <div id="divheader" >
-          <label id="hTitle" class="staticDescrip">RECOVERY REPORT</label>
-          <br />
-          <div style="position: relative">
-         	 <label id="hDate" class="staticDescrip">MAY 16, 2017</label>
-          </div>   
-          <br />
-          <br />
-          <div>
-            <label id="hDay"> <font size="5" face = "verdana"> Day 2 </font> </label><label id="hDescrip">after sugery</label>
+     <div id="divheader">
+          <div id="hLeft">
+          		<label id="hTitle" class="staticDescrip">RECOVERY TRACKER</label>
+                <div id="hDaySection"> 
+                    <label id="hDay">Day 2 </label>&nbsp;<label id="hDescrip">after sugery</label
+            	></div>
+          </div><!-- end hLeft -->
+          
+          
+          <div id="hRight">
+          
+              <div style="position: relative"><label id="hDate" class="staticDescrip">MAY 16, 2017</label></div>   
+              <br />
 
-            <label id="hProgBar">10 Days Post Surgery</label>
-            <br />
-            <img src='' alt='' usemap='#ImageMap' />
-            <map name="ImageMap" id="ImageMap">
-              <area shape="rect" coords="0,0,0,0" alt="" />
-            </map>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div)
+        		<div id="hProgressBar">
+                        <img id= "" src='./Images/HPogressBar.png' alt='' usemap='#ImageMap' width="300px" />
+                        <map name="ImageMap" id="ImageMap">
+                          <area shape="rect" coords="0,0,0,0" alt="" />
+                        </map>
+                    </div> <!-- end hProgressBar -->
+                    
+                <div id="hRecoverySection"> 
+                    <label id="">10 </label>&nbsp;<label id=""> days recovery survey</label>
+                </div>
+                
               
+
+          </div> <!-- end hRight -->
+
+          <br />
+          
+          
+          <br />
+          <br />
+          <br />
+          
+          
+          
+          <div>
+          
+          <hr style="color:white" />
+    
           <label id="hPatientSection" class="staticDescrip">
           Patient:
           <label id="hPatient">John Doe</label>
@@ -111,10 +135,6 @@
   </div>
 </div>
 
-<div id="divfooter">
-	<label style="color:#ffffff; position:relative; left:50%;">REMEMBER</label>
-	
-</div>
 
 </body>
 </html>
