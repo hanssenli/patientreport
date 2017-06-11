@@ -31,9 +31,12 @@
         #hProgressBar			{display:inline;}
 		#hDate     				{text-align:right;}
 		#hRecoverySection   	{text-align:right;}
-		#hRight					{text-align:right;}
-		#hPatientSection 		{position:relative; left:40%;}
-		#hMRNSection 			{position:relative; left:45%;}
+		#hBottom				{text-align:right; overflow: auto;}
+		#hPatientSection 		{float: left; width:50%; text-align: right;}
+		#hPatient				{position:relative; right:10%}
+		#hMRNSection 			{float:right; width:50%; text-align: left;}
+		#hMRN					{position:relative; left:10%}
+		
         
 		#sympSummarySection		{width:100%; text-align:center; color:#4A4A4A; font-size:16px;}
 		#sympSummaryHeading		{font-size:36px;}
@@ -79,15 +82,20 @@
          <div id= "hBottom">        
           	<hr style="color:white" />
           	<!-- <div style= "height:1px; background-color:white"> </div> -->
-    
-     	     <label id="hPatientSection" class="staticHDescrip">
-       		   	Patient:
-          	 	<label id="hPatient" class="dynamicHText">John Doe</label>
-         	 </label>
-         	 <label id="hMRNSection" class="staticHDescrip">
-          		MRN:
-          		<label id="hMRN" class="dynamicHText">11111111</label>
-          	</label>
+    		
+    		<div id="hPatientSection">
+     	    	<label class="staticHDescrip" id = "hPatient">
+       		   		Patient:
+          	 		<label id="hPatientName" class="dynamicHText">John Doe</label>
+         	 	</label>
+         	</div>
+         	
+         	<div id="hMRNSection">
+         	 	<label class="staticHDescrip" id="hMRN">
+          			MRN:
+          			<label id="hMRNText" class="dynamicHText">11111111</label>
+          		</label>
+        	</div>
         </div> <!-- end hBottom -->
     </div>  <!-- end divHeader -->
     
