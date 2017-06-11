@@ -12,7 +12,9 @@
 	<style>
 		label					{font-weight: normal;}
 	
-    	.staticDescrip			{color:#A6B4C3;}
+    	.staticHDescrip			{color:#A6B4C3;}
+		.dynamicHText			{color:#ffffff;}
+
         .headingText			{font-family:Georgia;}
 		#divheader 				{
         						 color:#ffffff; 
@@ -27,12 +29,9 @@
         #hDescrip  				{font-size:20px}
         #hRight					{float:right; position: relative; right: 10%;}
         #hProgressBar			{display:inline;}
-		#hDate     				{text-align:right;}
-		#hRecoverySection   	{text-align:right; }
+		#hRight					{text-align:right;}
 		#hPatientSection 		{position:relative; left:40%;}
 		#hMRNSection 			{position:relative; left:45%;}
-		#hPatient  				{color:#ffffff;}
-        #hMRN	   				{color:#ffffff;}
         
 		#sympSummarySection		{width:100%; text-align:center; color:#4A4A4A; font-size:16px;}
 		#sympSummaryHeading		{font-size:36px;}
@@ -48,7 +47,7 @@
     
      <div id="divheader">
           <div id="hLeft">
-          		<label id="hTitle" class="staticDescrip">RECOVERY TRACKER</label>
+          		<label id="hTitle" class="staticHDescrip">RECOVERY TRACKER</label>
                 <div id="hDaySection" class="headingText"> 
                     <label id="hDay">Day 2 </label>&nbsp;&nbsp;<label id="hDescrip">after surgery</label>
                 </div>
@@ -57,7 +56,7 @@
           
           <div id="hRight">
               <div id="hDate">
-              	<label class="staticDescrip">MAY 16, 2017</label>
+              	<label class="staticHDescrip">MAY 16, 2017</label>
               </div>
               
               <img id= "HProgressBar" src='./Images/HPogressBar.png' alt='' usemap='#ImageMap' width="300px" />
@@ -65,7 +64,7 @@
               			<area shape="rect" coords="0,0,0,0" alt="" />
               		</map>     
               <br />
-                <div id = "hRecoverySection" class= "staticDescrip">
+                <div id = "hRecoverySection" class= "staticHDescrip">
               		<label id="">10 </label>&nbsp;<label id=""> days recovery survey</label>
               	</div>
           </div> <!-- end hRight -->
@@ -79,13 +78,13 @@
           	<hr style="color:white" />
           	<!-- <div style= "height:1px; background-color:white"> </div> -->
     
-     	     <label id="hPatientSection" class="staticDescrip">
+     	     <label id="hPatientSection" class="staticHDescrip">
        		   	Patient:
-          	 	<label id="hPatient">John Doe</label>
+          	 	<label id="hPatient" class="dynamicHText">John Doe</label>
          	 </label>
-         	 <label id="hMRNSection" class="staticDescrip">
+         	 <label id="hMRNSection" class="staticHDescrip">
           		MRN:
-          		<label id="hMRN">11111111</label>
+          		<label id="hMRN" class="dynamicHText">11111111</label>
           	</label>
         </div> <!-- end hBottom -->
     </div>  <!-- end divHeader -->
