@@ -6,6 +6,10 @@
     <title>Sample Report - Advanced Reports</title>
     <link href="./Content/bootstrap.css" rel="stylesheet"/>
 	<link href="./Content/site.css" rel="stylesheet"/>
+    
+    <script src="./Scripts/jquery-3.1.1.js"></script> 
+	<script src="./Scripts/bootstrap.js"></script> 
+    <script src="./Scripts/respond.js"></script> 
  
     <script src="./Scripts/modernizr-2.6.2.js"></script>
 	<script src="./Scripts/modernizr-2.8.3.js"></script>
@@ -49,14 +53,16 @@
 
 <body>
 
-<div>
+<div class="container body-content">
   <div>
     
      <div id="divheader">
           <div id="hLeft">
           		<label id="hTitle" class="staticHDescrip">RECOVERY TRACKER</label>
                 <div id="hDaySection" class="headingText"> 
-                    <label id="hDay">Day 2 </label>&nbsp;&nbsp;<label id="hDescrip">after surgery</label>
+                    <label id="hDay">Day 2 </label>
+                    <label > </label>
+                    <label id="hDescrip">after surgery</label>
                 </div>
           </div><!-- end hLeft -->
           
@@ -71,9 +77,11 @@
               			<area shape="rect" coords="0,0,0,0" alt="" />
               		</map>     
               <br />
-                <div id = "hRecoverySection" class= "staticHDescrip">
-              		<label id="">10 </label>&nbsp;<label id=""> days recovery survey</label>
-              	</div>
+              <div id = "hRecoverySection" class= "staticHDescrip">
+                  <label id="">10 </label>
+                  <label > </label>
+                  <label id=""> days recovery survey</label>
+              </div>
           </div> <!-- end hRight -->
 
           <br />       
@@ -164,8 +172,14 @@
      </div>
     </div> <!-- end sympBoxSection -->
   </div>
-</div>
+</div> <!-- end container -->
 
+<!-- Visual Studio Browser Link --> 
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Internet Explorer","requestId":"c185f191fe6c4f0b89c5a3d1ccfde27d"}
+</script> 
+<script type="text/javascript" src="http://localhost:50775/a9ed32e0240b49f292842f7e17e99c95/browserLink" async></script> 
+<!-- End Browser Link -->
 
 </body>
 </html>
