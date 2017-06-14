@@ -42,8 +42,10 @@
 		#hMRN					{position:relative; left:10%}
 		
         
-        .sympBox				{display:inline-block; height:60px; width:280px; background-color:#F7F7F7;}
-		#sympBoxSection			{position:relative; left:25%; right:25%; max-width:862px;}
+        .sympBox				{display:inline-block; height:60px; width:33%; min-width:300px; background-color:#F7F7F7; border: thin solid white}
+		#sympBoxSection			{position:relative; padding-left:10%;padding-right:10%}
+		.sympBoxLabel			{width: 33%; height: 60px; text-align:right; position:relative; float:left}
+		
 		#sympSummarySection		{width:100%; text-align:center; color:#4A4A4A; font-size:16px;}
 		#sympSummaryHeading		{font-size:36px;}
 		#sympSummaryText		{width: 460px; text-align:left}
@@ -122,53 +124,139 @@
         	<div><label id="sympSummaryHeading" class="headingText">You are recovering well.</label></div>
         	<div><label id="sympSummaryText" >You have reported some symptoms, but they are expected. If you have any questions or concerns, please contact your care team at 1-800-234-5678. </label></div>
         </div>
-
-
     
     </div> <!-- end SympSummarySection -->
     
+    <br />
+    <br />
     
     <div > <img src="" alt="" /> </div>
     
     <div id= "sympBoxSection">
-   	 <div class= "sympBox" >
-     	 <label>Pain</label>
-     	 <img src='' alt='' usemap='#ImageMap' />
-     	 <map name="ImageMap" id="ImageMap">
-      	  	<area shape="rect" coords="0,0,0,0" alt="" />
-     	 </map>
-   	 </div>
-    
-     <div class= "sympBox">
-      	<label>Nausea</label>
-      	<img src='' alt='' usemap='#ImageMap' />
-      	<map name="ImageMap" id="ImageMap">
-        	<area shape="rect" coords="0,0,0,0" alt="" />
-      	</map>
-     </div>
-    
-     <div class= "sympBox">
-      	<label>Chills</label>
-      	<img src='' alt='' usemap='#ImageMap' />
-      	<map name="ImageMap" id="ImageMap">
-        	<area shape="rect" coords="0,0,0,0" alt="" />
-      	</map>
-     </div>
-    
-     <div class= "sympBox">
-      	<label>Vomiting</label>
-      	<img src='' alt='' usemap='#ImageMap' />
-      	<map name="ImageMap" id="ImageMap">
-        	<area shape="rect" coords="0,0,0,0" alt="" />
-      	</map>
-     </div>
-    
-     <div class= "sympBox">
-      	<label>Wound discharge</label>
-      	<img src='' alt='' usemap='#ImageMap' />
-      	<map name="ImageMap" id="ImageMap">
-        	<area shape="rect" coords="0,0,0,0" alt="" />
-      	</map>
+    	<div class= "sympBox" >
+           <div class ="sympBoxLabel">
+              <label>Pain</label>
+           </div>
+           <div>
+           <img src='./Images/SympBar.png' alt='' usemap='#ImageMap' width="150px"/>
+           <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+           </map>
+           </div>
+       </div>
+      
+       <div class= "sympBox">
+          <div class ="sympBoxLabel">
+          	<label>Fatigue</label>
+          </div>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div>
+      
+       <div class= "sympBox">
+          <label>Anxiety</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div>
+      
+       <div class= "sympBox">
+          <label>Fever</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div>
+      
+       <div class= "sympBox">
+          <label>Shivering/Shaking Chills</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div>
+       
+       <div class= "sympBox">
+          <label>Shortness of breath</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div>
+       
+       <div class= "sympBox">
+          <label>Nausea</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div>
+       
+       <div class= "sympBox">
+          <label>Vomiting</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div>
+       
+       <div class= "sympBox">
+          <label>Constipation</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div>     
+       
+       <div class= "sympBox">
+          <label>Redness</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div> 
+       
+       <div class= "sympBox">
+          <label>Swelling</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div> 
+       
+       <div class= "sympBox">
+          <label>Bruising/</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div> 
+       
+       <div class= "sympBox">
+          <label>Discharge</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div> 
+       
+       <div class= "sympBox">
+          <label>Passing gas</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
+       </div> 
+       
+       <div class= "sympBox">
+          <label>Bruising</label>
+          <img src='' alt='' usemap='#ImageMap' />
+          <map name="ImageMap" id="ImageMap">
+              <area shape="rect" coords="0,0,0,0" alt="" />
+          </map>
      </div>
     </div> <!-- end sympBoxSection -->
   </div>
