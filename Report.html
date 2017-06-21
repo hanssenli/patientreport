@@ -42,10 +42,10 @@
 		#hMRN					{position:relative; left:10%}
 		
         
-        .sympBox				{float:left; height:60px; width:33%; min-width:300px; background-color:#F7F7F7; border: thin solid white; display:table;}
+        .sympBox				{float:left; display:table; height:60px; width:33%; min-width:300px; background-color:#F7F7F7; border: thin solid white;}
 		#sympBoxSection			{position:relative; padding-left:10%;padding-right:10%;}
-		.sympBoxLabel			{width: 33%; text-align:right; word-break:keep-all; white-space:normal; display:table-cell; vertical-align:middle;}
-		.sympBoxRating			{width: 66%; text-align:center; display:table-cell; vertical-align:middle;}
+		.sympBoxLabel			{display:table-cell; vertical-align:middle; width: 33%; text-align:right; word-break:keep-all; white-space:normal;}
+		.sympBoxRating			{display:table-cell; vertical-align:middle; width: 66%; text-align:center;}
 		
 		#sympSummarySection		{width:100%; text-align:center; color:#4A4A4A; font-size:16px;}
 		#sympSummaryHeading		{font-size:36px;}
@@ -57,9 +57,11 @@
 		#expSympSection			{display:inline-block; width:100%; font-size:24px}
 		.expSympBox				{display:inline-block; padding: 20px; background-color:#F7F7F7; width: 90%;}
 		.sympLine				{color:#979797;}
-		#expSympBoxHeader		{display:table; width:100%;}
-		#expSymp				{position:relative; left:10%; float:left;
-		}
+		#expSympBoxHeader		{display:table; width:80%; margin-left:10%; margin-right:10%;}
+		#expSymp				{display:table-cell; width:60%;}
+		#expSympYR				{display:table-cell;}
+		#expSympRating			{display:table-cell;}
+		
 		
     </style>
     
@@ -349,14 +351,17 @@
         		<div id="expSymp">
         		Pain
         		</div>
-        		<div>
+        		<div id="expSympYR">
         		Your Report
         		</div>
-        		<div>
-        		sympBoxLabel
+        		<div id="expSympRating">
+        		    <img src='./Images/SympBar.png' alt='' usemap='#ImageMap' width="170px"/>
+          			<map name="ImageMap" id="ImageMap">
+              		<area shape="rect" coords="0,0,0,0" alt="" />
+          			</map>
         		</div>
         	</div>
-        	Pain
+        	
         	<hr class="symplLine" />
 
         
