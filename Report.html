@@ -17,32 +17,23 @@
 		label					{font-weight: normal;}
 	
     	.staticHDescrip			{color:#A6B4C3;}
-		.dynamicHText			{color:#ffffff;}
 
-        .headingText			{font-family:Georgia;}
-		#divheader 				{
+     .headingText			{font-family:Georgia;}
+		  #divheader 				{
         						 color:#ffffff; 
         						 background-color: #52667C; 
-        						 padding-top:20px; 
+        						 padding:20px; 
         						 font-family: Arial;
         						 font-size:16px;
         						 width:100%;
+                     text-align: center;
         						}
-		#hLeft					{float:left; position:relative; left:10%;}
         #hDay  	   				{font-size:36px}
-        #hDescrip  				{font-size:20px}
-        #hRight					{float:right; position: relative; right:10%;}
         #hProgressBar			{display:inline;}
-		#hDate     				{text-align:right;}
-		#hRecoverySection   	{text-align:right;}
-		#hBottom				{text-align:right; overflow: hidden;}
-		#hPatientSection 		{float: left; width:50%; text-align: right;}
-		#hPatient				{position:relative; right:10%}
-		#hMRNSection 			{float:right; width:50%; text-align: left;}
-		#hMRN					{position:relative; left:10%}
+
 		
         
-        .sympBox				{float:left; display:table; height:60px; width:33%; min-width:300px; background-color:#F7F7F7; border: thin solid white;}
+    .sympBox				{float:left; display:table; height:60px; width:33%; min-width:300px; background-color:#F7F7F7; border: thin solid white;}
 		#sympBoxSection			{position:relative; padding-left:10%;padding-right:10%;}
 		.sympBoxLabel			{display:table-cell; vertical-align:middle; width: 33%; text-align:right; word-break:keep-all; white-space:normal;}
 		.sympBoxRating			{display:table-cell; vertical-align:middle; width: 66%; text-align:center;}
@@ -51,16 +42,30 @@
 		#sympSummaryHeading		{font-size:36px;}
 		#sympSummaryText		{width: 460px; text-align:left}
 		
-		.detailLine				{color:#56677A;}
+		.detailLine				{color:#56677A; border-top: 3px solid;}
 		#detailSection			{text-align:center; color:#56677A; font: bold 18px Arial ; display:inline-block; width:100%; padding-left:20%; padding-right:20%}
 		
-		#expSympSection			{display:inline-block; width:100%; font-size:24px}
-		.expSympBox				{display:inline-block; padding: 20px; background-color:#F7F7F7; width: 90%;}
-		.sympLine				{color:#979797;}
-		#expSympBoxHeader		{display:table; width:80%; margin-left:10%; margin-right:10%;}
-		#expSymp				{display:table-cell; width:60%;}
-		#expSympYR				{display:table-cell;}
-		#expSympRating			{display:table-cell;}
+		#expSympSection			{display:inline-block; width:100%; font-size:24px; text-align: center;}
+    #concernSympSection     {display:inline-block; width:100%; font-size:24px; text-align: center;}
+
+		.sympDetailBox				{
+                        display:inline-block; 
+                        padding: 20px 10% 20px 10%; 
+                        background-color:#F7F7F7; 
+                        width: 90%; 
+                        text-align: left; 
+                        font: 16px Arial; 
+                      }
+		.sympLine				{border-top: 3px solid #979797; }
+		.sympTitle				{display:table-cell; width:65%; font: 36px Georgia; color: #52667C}
+    .sympHeading       {display:table-cell; width:25%;}
+    .sympIcon       {display:table-cell; width:25%; text-align: center}
+    .sympContent       {display:table-cell; width:50%;}
+    .sympSLine       {border-top: 1px solid #979797; }
+
+
+		.sympInfo				{display:table-cell; width: 15%; }
+		.sympRating			{display:table-cell;}
 		
 		
     </style>
@@ -73,56 +78,18 @@
   <div>
     
      <div id="divheader">
-          <div id="hLeft">
-          		<label id="hTitle" class="staticHDescrip">RECOVERY TRACKER</label>
-                <div id="hDaySection" class="headingText"> 
-                    <label id="hDay">Day 2 </label>
-                    <label > </label>
-                    <label id="hDescrip">after surgery</label>
-                </div>
-          </div><!-- end hLeft -->
-          
-          
-          <div id="hRight">
-              <div id="hDate">
-              	<label class="staticHDescrip">MAY 16, 2017</label>
-              </div>
-              
-              <img id= "HProgressBar" src='./Images/HPogressBar.png' alt='' usemap='#ImageMap' width="300px" />
-              		<map name="ImageMap" id="ImageMap">
-              			<area shape="rect" coords="0,0,0,0" alt="" />
-              		</map>     
-              <br />
-              <div id = "hRecoverySection" class= "staticHDescrip">
-                  <label id="">10 </label>
-                  <label > </label>
-                  <label id=""> days recovery survey</label>
-              </div>
-          </div> <!-- end hRight -->
+          <div id="hDate">
+               <label class="staticHDescrip">MAY 16, 2017</label>
+          </div>
 
-          <br />       
-          <br />
-          <br />
-          <br />
-                    
-         <div id= "hBottom">        
-          	<hr style="color:white" />
-          	<!-- <div style= "height:1px; background-color:white"> </div> -->
-    		
-    		<div id="hPatientSection">
-     	    	<label class="staticHDescrip" id = "hPatient">
-       		   		Patient:
-          	 		<label id="hPatientName" class="dynamicHText">John Doe</label>
-         	 	</label>
-         	</div>
-         	
-         	<div id="hMRNSection">
-         	 	<label class="staticHDescrip" id="hMRN">
-          			MRN:
-          			<label id="hMRNText" class="dynamicHText">11111111</label>
-          		</label>
-        	</div>
-        </div> <!-- end hBottom -->
+          <div id="hDaySection" class="headingText"> 
+               <label id="hDay">Day 2 after surgery</label>
+          </div>
+
+          <img id= "HProgressBar" src='./Images/HPogressBar.png' alt='' usemap='#ImageMap' width="300px" />
+                  <map name="ImageMap" id="ImageMap">
+                    <area shape="rect" coords="0,0,0,0" alt="" />
+                  </map>   
     </div>  <!-- end divHeader -->
     
     <br />
@@ -333,46 +300,122 @@
     <div id="detailSection">
         <br />
         <br />
-    	<hr class="detailLine" />
-        <label>REPORT DETAILS</label>
-		<hr class="detailLine" />
+        <hr class="detailLine" />
+        <label>YOUR REPORT DETAILS</label>
+		    <hr class="detailLine" />
+    </div> <!-- end detail section -->
 
-    
-    </div>
-    
+    <div id="concernSympSection">
+        <br />
+        <label>AREAS OF CONCERN</label>
+        <br />
+        <br />
+
+        <div class="sympDetailBox">
+
+          <div> <!-- begin sympBoxHeader -->
+            <div class="sympTitle">
+              Pain
+            </div>
+            <div class="sympInfo">
+              YOUR REPORT
+            </div>
+            <div class="sympRating">
+                <img src='./Images/SympBar.png' alt='' usemap='#ImageMap' width="170px"/>
+                <map name="ImageMap" id="ImageMap">
+                  <area shape="rect" coords="0,0,0,0" alt="" />
+                </map>
+            </div>
+          </div> <!-- end sympBoxHeader -->
+
+          <hr class="sympLine" />
+
+          <div id="symp_pain_1">
+            <div class="sympHeading">
+              UNDERSTANDING <br> YOUR SYMPTOMS 
+            </div>
+
+            <div class="sympIcon">
+                <img src='./Images/SympIcon.png' alt='' usemap='#ImageMap' width="50px"/>
+            </div>
+
+            <div class="sympContent">
+                Moderate pain 4 days after surgery is expected and is nothing to be concerned about.
+                
+            </div>
+          </div> <!-- end unique symptom part 1-->
+
+        </div> <!-- end expSympBox -->
+    </div>  <!-- end expSympSection -->
+
+
     <div id="expSympSection">
         <br />
         <label>EXPECTED SYMPTOMS</label>
         <br />
-		<br />
+		    <br />
 
-        <div class="expSympBox">
-        	<div id="expSympBoxHeader">
-        		<div id="expSymp">
-        		Pain
+        <div class="sympDetailBox">
+
+        	<div> <!-- begin expSympBoxHeader -->
+        		<div class="sympTitle">
+        		  Pain
         		</div>
-        		<div id="expSympYR">
-        		Your Report
+        		<div class="sympInfo">
+        		  YOUR REPORT
         		</div>
-        		<div id="expSympRating">
+        		<div class="sympRating">
         		    <img src='./Images/SympBar.png' alt='' usemap='#ImageMap' width="170px"/>
           			<map name="ImageMap" id="ImageMap">
               		<area shape="rect" coords="0,0,0,0" alt="" />
           			</map>
         		</div>
-        	</div>
-        	
-        	<hr class="symplLine" />
+        	</div> <!-- end expSympBoxHeader -->
 
-        
-        </div>
+          <hr class="sympLine" />
 
-    
-    </div>
-    
-    
-    
-  </div>
+          <div id="symp_pain_1">
+            <div class="sympHeading">
+              UNDERSTANDING <br> YOUR SYMPTOMS 
+            </div>
+
+            <div class="sympIcon">
+                <img src='./Images/SympIcon.png' alt='' usemap='#ImageMap' width="50px"/>
+            </div>
+
+            <div class="sympContent">
+                Moderate pain 4 days after surgery is expected and is nothing to be concerned about.
+                
+            </div>
+          </div> <!-- end unique symptom part 1-->
+
+          <hr class="sympSLine" />
+
+          <div id="symp_pain_2">
+            <div class="sympHeading">
+              WHAT TO EXPECT
+            </div>
+
+            <div class="sympIcon">
+                <img src='./Images/SympIcon.png' alt='' usemap='#ImageMap' width="50px"/>
+            </div>
+
+            <div class="sympContent">
+                You experienced less pain than expected for 4 days after surgery.
+                <br />
+                <br />
+                Most patients who report this level of pain fully recover by day 8.
+
+                <br>
+
+                <img src='./Images/SympGraph.png' alt='' usemap='#ImageMap' width="400px"/>
+                <map name="ImageMap" id="ImageMap">
+                  <area shape="rect" coords="0,0,0,0" alt="" />
+                </map>
+            </div> <!-- end expSympContent -->
+          </div> <!-- end unique symptom part 2-->
+        </div> <!-- end expSympBox -->
+    </div>  <!-- end expSympSection -->
 </div> <!-- end container -->
 
 <!-- Visual Studio Browser Link --> 
