@@ -41,7 +41,7 @@
 		#sympSummaryText		{width: 460px; text-align:left}
 		
 		.detailLine				{color:#56677A; border-top: 3px solid;}
-		#detailSection			{text-align:center; color:#56677A; font: bold 18px Arial ; display:inline-block; width:100%; padding-left:20%; padding-right:20%}
+		.detailSection			{text-align:center; color:#56677A; font: bold 18px Arial ; display:inline-block; width:100%; padding-left:20%; padding-right:20%}
 		
 		#expSympSection			{display:inline-block; width:100%; font-size:24px; text-align: center;}
     #concernSympSection     {display:inline-block; width:100%; font-size:24px; text-align: center;}
@@ -65,9 +65,10 @@
 		.sympInfo				{display:table-cell; width: 15%; }
 		.sympRating			{display:table-cell;}
 	
-	#helpTipsSection		{background-color:#E4EAF0;}
-		
-		
+    #helpTipsSection		{background-color:#E4EAF0; text-align: center;}
+    .helpTips           {padding-left: 23%; padding-right: 23%;}
+		.helpTipsTitle      {font: 24px Arial;}
+		.helpTipsContent    {font-size: 16px; text-align: left}
     </style>
     
 </head>
@@ -298,7 +299,7 @@
     
     
 
-    <div id="detailSection">
+    <div class="detailSection">
         <br />
         <br />
         <hr class="detailLine" />
@@ -360,7 +361,7 @@
 
         	<div> <!-- begin expSympBoxHeader -->
         		<div class="sympTitle">
-        		  Pain
+        		  Fatigue
         		</div>
         		<div class="sympInfo">
         		  YOUR REPORT
@@ -385,8 +386,7 @@
             </div>
 
             <div class="sympContent">
-                Moderate pain 4 days after surgery is expected and is nothing to be concerned about.
-                
+                Mild fatigue 4 days after surgery is expected and is nothing to be concerned about.                
             </div>
           </div> <!-- end unique symptom part 1-->
 
@@ -402,10 +402,7 @@
             </div>
 
             <div class="sympContent">
-                You experienced less pain than expected for 4 days after surgery.
-                <br />
-                <br />
-                Most patients who report this level of pain fully recover by day 8.
+                You experienced less fatigue than is expected for 4 days after surgery. <br> <br> Most patients who report this level of fatigue fully recover by day 8. 
 
                 <br>
 
@@ -420,13 +417,30 @@
 </div> <!-- end container -->
 
 	<div id="helpTipsSection"> <!-- Helpful Tips Section -->
-   		<div id="detailSection">
+   		<div class="detailSection">
         	<br />
         	<br />
         	<hr class="detailLine" />
-        	<label>Helpful Tips</label>
+        	<label>HELPFUL TIPS</label>
 			    <hr class="detailLine" />
 		</div> <!-- end detail section -->
+
+    <div class="helpTips">
+      <label class="helpTipsTitle">About Your Breast Surgery</label>
+      <br />
+      <br />
+
+      <div class="helpTipsContent">This guide will help you prepare for your surgery, learn what to expect on the day of your surgery, and help guide you through your recovery. We recommend that you bring this guide with you to all of your appointments, including your surgery.</div>
+      <br />
+      <br />
+     
+      <label class="helpTipsTitle">Exercises After Breast Surgery Without Reconstruction</label>
+      <br />
+      <br />
+
+      <div class="helpTipsContent">Memorial Sloan Kettering physical therapy expert Laryssa Buoneto describes an exercise regimen for women who have had breast surgery without reconstruction. These exercises will help you regain range of motion in the arm on the side where you had surgery.</div>
+
+    </div>
 	</div> <!-- End Helpful Tips Section -->
 
 <!-- Visual Studio Browser Link --> 
