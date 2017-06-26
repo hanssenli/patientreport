@@ -30,12 +30,15 @@
         						}
         #hDay  	   				{font-size:36px}
         #hProgressBar			{display:inline;}
-    #phoneNumber    {font-size: 20px;}
+    .phoneNumber    {font-size: 20px;}
+    #contactSection {display: table; width: 100%; padding-left: 25%; padding-right: 25%}
+    .contactCell    {display: table-cell; min-width:200px;}
+    .verticalLine   { width: 1px; background-color: black; height: 100px; display: inline-block;}
     #lastDayText    {padding-left: 30%; padding-right:30%;}
     .sympBox				{display:table-cell; height:60px; width:30%; min-width:200px; background-color:#F7F7F7; border: thin solid white;}
 
     .symBoxRow      {width:100%; display: table}
-		#sympBoxSection			{position:relative; padding-left:10%;padding-right:10%;}
+		#sympBoxSection			{position:relative; padding-left:10%; padding-right:10%;}
 		.sympBoxLabel			{display:table-cell; vertical-align:middle; width: 100px; text-align:right; word-break:keep-all; white-space:normal;}
 		.sympBoxRating			{display:table-cell; vertical-align:middle; width: 66%; text-align:center;}
 		
@@ -124,9 +127,28 @@
             </div>
           </div>
           <br>
-          <div id="phoneNumber">
+
+          <div class="phoneNumber">
             1-800-234-5678
           </div>
+
+          <div id="contactSection" style="display: none">
+              <div class="contactCell">
+                  M-F 9am-5pm <br> Dr. Firstname Lastname
+                  <br>
+                  <br>
+                  <div class="phoneNumber">1-800-234-5678</div>
+              </div>
+              <div class="verticalLine">&nbsp;</div>
+              <div class="contactCell">
+                For off hours,<br> ask for doctors on call
+                <br>
+                <br>
+                <div class="phoneNumber">1-800-234-5678</div>
+
+              </div>
+          </div>
+
     
     </div> <!-- end SympSummarySection -->
     
